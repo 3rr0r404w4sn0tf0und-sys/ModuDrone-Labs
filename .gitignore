@@ -1,0 +1,21 @@
+# --- Operating System Junk ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# --- Python and AI Caches (Jetson Orin Nano) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.env
+venv/
+ENV/
+
+# --- Compiled Logs and Dumps ---
+*.log
+*.bak
+*.tmp
+*.swp

@@ -3,8 +3,8 @@
 An open-source, heavy-lift agricultural octocopter designed to challenge closed, proprietary drone ecosystems. ModuDrone Labs v1 is a student-led, 4-year engineering initiative focused on building a modular, repairable, and high-performance industrial flight platform using off-the-shelf hardware and custom fabrication.
 
 ## 🚀 Quick Links
-* **CAD** [Onshape](https://cad.onshape.com/documents/e87d46874a385fbec040f01c/w/3f5500552e76a844099c1e4a/e/32362c0b7677eff64987179f?renderMode=0&uiState=6a67dc72e209f83e7bd8b9c5)
-* **ODOO** [https://modudrone-labs.odoo.com/](https://modudrone-labs.odoo.com/) 
+* **CAD**  :  [Onshape](https://cad.onshape.com/documents/e87d46874a385fbec040f01c/w/3f5500552e76a844099c1e4a/e/32362c0b7677eff64987179f?renderMode=0&uiState=6a67dc72e209f83e7bd8b9c5)
+* **ODOO** :  [https://modudrone-labs.odoo.com/](https://modudrone-labs.odoo.com/) 
 ---
 
 ## 📐 Platform Specifications

@@ -31,6 +31,8 @@ This is a long-term **4-year project** focused on absolute engineering transpare
   
   <img width="1902" height="989" alt="image" src="https://github.com/user-attachments/assets/78d17977-06a4-4466-bf73-6302d7eb384f" />
   (Prototype Model)
+  <img width="1283" height="674" alt="image" src="https://github.com/user-attachments/assets/cd3d878a-ff90-4704-a490-a795931ef11d" />
+  (With Clamps)
 * **Phase 2: R&D Prototyping & PCB Design** 🟡
   * Tooling and printing frame prototypes utilizing PA612-CF (Carbon Fiber Reinforced Nylon) filaments.
   * Compiling custom power delivery breakouts and validating the DroneCAN electronic wiring.

@@ -32,4 +32,6 @@ All fuselage changes should follow the standard ModuDrone workflow:
 This folder is actively evolving as the fuselage transitions from a visual prototype to a weight‑optimized flight‑ready structure.  
 Expect frequent updates as internal hollowing, mounting revisions, and structural optimizations progress.
 
+V2 is missing as it was just pure sketches.
+
 ---

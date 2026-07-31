@@ -11,7 +11,9 @@
 - Updated the master geometry to support **27.2 × 8.9″ propellers**, validating rotor‑disk clearance, coaxial spacing, and aerodynamic interaction between upper and lower rotors.
 <img width="1023" height="792" alt="image" src="https://github.com/user-attachments/assets/c4101e4f-68eb-429c-954e-49e03564143b" />
 <img width="779" height="724" alt="image" src="https://github.com/user-attachments/assets/f1810303-4bbe-4b42-a029-5617c6fbe6e8" />
+
 (Exploded)
+
 ---
 
 ### 📐 **Geometric Validation & Structural Improvements**

@@ -1,3 +1,40 @@
+## 🛠️ **Engineering Update — Powertrain & Architecture Overhaul**
+**📅 2026‑07‑30 • 22:59 EDT**
+
+---
+
+### 🔧 **Milestone Completed**
+- Migrated the propulsion system to **MAD M7C15 IPE motors**, providing higher torque density, improved thermal stability, and IP45‑rated environmental protection suitable for manned‑class reliability.
+- Upgraded to a **higher‑current ESC platform**, enabling cleaner transient response, reduced voltage sag, and improved sustained‑thrust performance under heavy load.
+- Integrated the **Cube Orange+** flight controller, adding triple‑redundant IMUs, advanced vibration isolation, and expanded sensor‑fusion capabilities for precision flight and safety.
+- Converted the airframe to a **coaxial propulsion layout**, increasing total thrust output while reducing arm span and improving yaw authority.
+- Updated the master geometry to support **27.2 × 8.9″ propellers**, validating rotor‑disk clearance, coaxial spacing, and aerodynamic interaction between upper and lower rotors.
+<img width="1023" height="792" alt="image" src="https://github.com/user-attachments/assets/c4101e4f-68eb-429c-954e-49e03564143b" />
+<img width="779" height="724" alt="image" src="https://github.com/user-attachments/assets/f1810303-4bbe-4b42-a029-5617c6fbe6e8" />
+(Exploded)
+---
+
+### 📐 **Geometric Validation & Structural Improvements**
+- Verified that the larger **M7C15 motor housings** fit cleanly within the revised mount architecture, maintaining correct bolt‑circle alignment and ensuring no interference with adjacent structural components.
+- Confirmed coaxial spacing meets aerodynamic requirements for:
+  - minimized rotor‑wash interference  
+  - stable thrust symmetry across the full throttle range  
+  - reduced vibration coupling into the flight‑controller bay  
+- Validated ESC placement and airflow paths to ensure adequate cooling during peak current draw.
+- Updated CAD assemblies to reflect the new motor geometry, ESC footprint, and coaxial stack height, ensuring compatibility with the existing frame and clamp system.
+
+---
+
+### 🧩 **Next Steps**
+- Finalize **coaxial spacing** and thrust‑interaction modeling for the 27.2×8.9″ rotor pair.  
+- Begin **thermal simulations** for the upgraded ESCs under continuous high‑load operation.  
+- Design the **new ESC mounting plate** with improved airflow and vibration isolation.  
+- Update the **motor‑clamp reinforcement** to match the increased torque output of the M7C15 motors.  
+- Integrate **power‑distribution routing** for the higher‑current system, including cable strain‑relief geometry.  
+- Prepare the **vibration‑isolated Cube Orange+ bay** for final assembly and wiring layout.  
+
+---
+
 ## 🛠️ **Engineering Update — Motor Clamp Wall Reinforcement**
 **📅 2026‑07‑28 • 20:36 EDT**
 

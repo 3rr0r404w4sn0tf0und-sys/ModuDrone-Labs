@@ -33,12 +33,14 @@ This is a long-term **4-year project** focused on absolute engineering transpare
 
 
 
-* **Phase 2: R&D Prototyping & PCB Design** 🟡
+* **Phase 2: R&D Prototyping & Design** 🟡
   * Tooling and printing frame prototypes utilizing PA612-CF (Carbon Fiber Reinforced Nylon) filaments.
-  * Compiling custom power delivery breakouts and validating the DroneCAN electronic wiring.
-* **Phase 3: Flight Integration & Testing** 🔴
+  * Designing and validating electronic wiring.
+* **Phase 3: Funding** 🔴
+  * Indiegogo launch and fund period.
+* **Phase 4: Flight Integration & Testing** 🔴
   * Core autopilot parameter tuning and testing sensory loop feedback (LiDAR / Gimbal).
-* **Phase 4: Open Commercialization** 🔴
+* **Phase 5: Open Commercialization** 🔴
   * Launching open-source kit architectures for independent distribution.
 
 ---

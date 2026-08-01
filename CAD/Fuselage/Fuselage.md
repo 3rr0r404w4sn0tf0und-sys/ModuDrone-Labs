@@ -13,7 +13,7 @@ It serves as the central workspace for the structural body that houses the drone
 
 ## 🧱 **Design Intent**
 The fuselage is engineered to:
-- Provide a rigid central structure for the V‑Octo layout  
+- Provide a rigid central structure for the Co-Axial layout  
 - Support high‑torque MAD motor loads through reinforced clamp nodes  
 - Maximize internal usable volume while minimizing mass  
 - Maintain clean airflow paths for cooling and sensor visibility  

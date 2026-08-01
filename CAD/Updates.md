@@ -1,6 +1,9 @@
 ## 🛠️ **Engineering Update — Arm Clamp Completion & Fuselage V5 Integration**
 **📅 2026‑08‑01 • 12:22 EDT**
-
+### Summary of Major Revisions
+- Fuselage: V4 → V5
+- Motor Clamp: V3 → V4
+- Arm Clamp: V1 (initial release)
 ---
 
 ### 🔧 **Milestone Completed**

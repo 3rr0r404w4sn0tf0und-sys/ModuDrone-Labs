@@ -29,7 +29,8 @@ This is a long-term **4-year project** focused on absolute engineering transpare
   * Finalizing the aerodynamic central fuselage hull shell within Onshape.
   * Structural layout optimization for the 8-arm carbon fiber chassis leverage points.
 
-<img width="1217" height="721" alt="image" src="https://github.com/user-attachments/assets/6ec122ef-0ac9-46b1-ae51-7380909d8128" />
+<img width="1252" height="774" alt="image" src="https://github.com/user-attachments/assets/a272424d-91fb-4490-843c-93e5ebf10823" />
+
 
 
 * **Phase 2: R&D Prototyping & PCB Design** 🟡

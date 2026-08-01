@@ -11,7 +11,8 @@ These components mechanically secure the propulsion system and structural arms t
 - M6 heat‑set insert bosses (7–8 mm reinforced)  
 - Through‑pin channel geometry for torque‑locking  
 - Mounting interfaces for MAD HAVOC motor plates
-  <img width="724" height="586" alt="image" src="https://github.com/user-attachments/assets/b5625d8c-69e9-4102-a91c-ddab155974de" />
+<img width="1052" height="746" alt="image" src="https://github.com/user-attachments/assets/3315b16b-c6a3-42bc-9c43-88710cab2115" />
+(With Simplified Motors)
 
 
 ---

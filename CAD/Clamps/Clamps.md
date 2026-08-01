@@ -14,13 +14,6 @@ These components mechanically secure the propulsion system and structural arms t
   <img width="724" height="586" alt="image" src="https://github.com/user-attachments/assets/b5625d8c-69e9-4102-a91c-ddab155974de" />
 
 
-### **Arm Clamps**
-- Full‑wrap clamp bodies for 30 mm arms  
-- 1/4" rubber‑liner compression geometry  
-- M6 bolt patterns for even clamping force  
-- Reinforced flange interfaces for fuselage attachment  
-- Parametric sketches defining clamp curvature and fit tolerances
-
 ---
 
 ## 🛠️ **Design Intent**

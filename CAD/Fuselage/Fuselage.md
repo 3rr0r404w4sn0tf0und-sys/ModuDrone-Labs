@@ -7,7 +7,8 @@ It serves as the central workspace for the structural body that houses the drone
 ## 📦 **What Lives Here**
 - Full fuselage **solid models**  
 
-<img width="1227" height="772" alt="image" src="https://github.com/user-attachments/assets/601183b1-9aaa-40d4-b99f-5fa09b7e430b" />
+<img width="800" height="605" alt="image" src="https://github.com/user-attachments/assets/089ede87-4081-4845-a7a2-53868421c947" />
+
 
 ---
 

@@ -1,3 +1,37 @@
+## 🛠️ **Engineering Update — Arm Clamp Completion & Fuselage V5 Integration**
+**📅 2026‑08‑01 • 12:22 EDT**
+
+---
+
+### 🔧 **Milestone Completed**
+- Completed the full CAD for the **V5 arm‑clamp system**, including the revised 40 mm bore, 4 mm structural fillets, and updated geometry for carbon‑rod integration.
+- Finalized the **V5 fuselage architecture**, incorporating the new clamp interface, updated arm spacing, and improved structural continuity across the central frame.
+- Validated the clamp‑to‑arm transition clearances, ensuring proper fitment for **40×36 mm carbon rods** and eliminating interference caused by earlier oversized fillet radii.
+
+<img width="1077" height="801" alt="image" src="https://github.com/user-attachments/assets/446d2417-757a-41f8-acc7-4102f251cfa5" />
+
+
+---
+
+### 📐 **Geometric Validation & Structural Improvements**
+- Confirmed that the clamp geometry maintains correct alignment with the fuselage’s arm sockets, preserving structural load paths and minimizing stress concentrations at the 40 mm bore.
+- Ensured that the 4 mm fillet radius provides adequate reinforcement without interfering with arm geometry or reducing wall thickness around the clamp interface.
+- Verified fuselage V5 symmetry, arm spacing, and motor‑mount alignment for the coaxial propulsion layout.
+- Updated CAD assemblies to reflect accurate mass properties for clamps, arms, motors, and props prior to infill adjustments.
+- Calculated the full V5 assembly mass at **87.2009637 lb (≈39.55 kg)** before hollowing, infill slicing, or internal structural reduction.
+
+---
+
+### 🧩 **Next Steps**
+- Begin **internal hollowing** of the fuselage V5 shell to prepare for 30% gyroid infill slicing with 4 walls and 4 floors/roofs.
+- Recalculate mass properties after infill reduction to establish accurate flight‑ready weight estimates.
+- Integrate **ESC mounting geometry**, wiring channels, and power‑distribution pathways into the fuselage interior.
+- Add the **Cube Orange+ isolation bay** and finalize avionics mounting rails.
+- Prepare **V5 static assembly documentation** for GitHub, including exploded views and part‑level callouts.
+- Start early **thermal and vibration modeling** for the clamp‑to‑arm interface under full thrust load.
+
+---
+
 ## 🛠️ **Engineering Update — Powertrain & Architecture Overhaul**
 **📅 2026‑07‑30 • 22:59 EDT**
 

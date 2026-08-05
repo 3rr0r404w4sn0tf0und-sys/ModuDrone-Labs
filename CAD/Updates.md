@@ -1,3 +1,34 @@
+## 🛠️ Engineering Update — Front Fuselage Split (Work in Progress)
+**📅 2026‑08‑04 • 22:31 EDT**
+
+---
+
+### 🔧 Current Progress
+- Continued splitting the **front fuselage module** into multiple printable sections. The geometry is still being refined, but the main separation planes are established and behaving well.
+- Added internal thickening features behind the insert locations. The wall extension is currently **+3.4 mm**, giving a total thickness of ~**5.7 mm**, which is enough for the **5.4 mm M3 heat‑set inserts** planned for PA612‑CF.
+- Started transitioning from a single large dovetail to **multiple smaller dovetails** along the curved seam. This is already improving alignment and reducing binding during test fits.
+- Applied fillets to new edges created by the split. This helps reduce stress concentrations and makes the PA612‑CF geometry print cleaner.
+- Continued shaping the **camera‑mount lower housing**. Even though it doesn’t tie into the carbon‑rod frame, internal ribs and supports are being added so it still contributes to front‑section stiffness.
+<img width="642" height="451" alt="image" src="https://github.com/user-attachments/assets/f0f373e5-357e-4c8f-8674-02242c4f28e0" />
+<img width="920" height="486" alt="image" src="https://github.com/user-attachments/assets/b58c3999-ffcb-4895-a964-7999c09b8e9d" />
+<img width="825" height="533" alt="image" src="https://github.com/user-attachments/assets/0dd97be6-8f84-4982-ba7e-a1d09030e151" />
+
+---
+
+### 📐 Fit & Structural Adjustments
+- Verified that a **4.2 mm pilot hole** is the correct interference fit for the **4.6 mm OD** heat‑set inserts being used.
+- Internal ribs are being standardized at **3.4 mm height** to match the required insert depth while keeping enough clearance for wiring and airflow.
+- Dovetail spacing and curvature are still being tuned. Early tests show that multiple small dovetails handle PA612‑CF shrinkage better than one large dovetail.
+
+---
+
+### 🚧 Still in Progress
+- Finalizing the **battery pack holder** geometry. This will be integrated into the split fuselage once the front section is fully stabilized.
+- Additional fillets and internal supports will be added once the battery bay layout is locked in.
+- More adjustments expected as the front and bottom sections are test‑printed and checked for fit after funding.
+
+---
+
 ## 🛠️ **Engineering Update — Arm Clamp Completion & Fuselage V5 Integration**
 **📅 2026‑08‑01 • 12:22 EDT**
 ### Summary of Major Revisions

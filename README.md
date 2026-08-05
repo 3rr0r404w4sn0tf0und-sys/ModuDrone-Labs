@@ -50,7 +50,7 @@ This is a long-term **4-year project** focused on absolute engineering transpare
 We believe hardware ecosystems should be accessible and owned by the community, not locked down by restrictive corporations. To guarantee this project remains permanently open, it is protected under a strict copyleft shield:
 
 * **Software & Configurations**: This repository's code, scripts, and flight configuration files are initially licensed under the **GNU Affero General Public License v3 (AGPLv3)**. 
-* **Hardware & Geometry**: *(CERN-OHL-S-2.0 to be integrated explicitly during physical prototyping phases).*
+* **Hardware & Geometry**: *All physical CAD models, STEP files, and frame geometries are governed by the [CERN Open Hardware Licence v2 - Strongly Reciprocal (CERN-OHL-S-2.0)](./CAD/HARDWARE_LICENSE.md)*
 
 **The Copyleft Guarantee**: Anyone is legally allowed to modify, adapt, or build upon this architecture. However, any derivative modifications or improvements **must be published openly under these exact same terms**. If you optimize our layout, your improvements must legally remain free for the public—and us—to utilize.
 

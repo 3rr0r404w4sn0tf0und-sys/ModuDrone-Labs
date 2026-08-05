@@ -1,3 +1,6 @@
+All physical hardware geometries, STEP files, 3D printing configurations, and CAD assets contained within this directory are strictly governed by the CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S).
+
+
 CERN Open Hardware Licence Version 2 - Strongly Reciprocal
 
 

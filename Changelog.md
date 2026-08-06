@@ -1,3 +1,66 @@
+## 🛠️ Engineering Update — Fuselage V6 Progress & Structural Additions
+**📅 2026‑08‑05 • 23:05 EDT**
+### Summary of Major Revisions
+- Fuselage: V5 → V6
+- Motor Clamp: V3 → V4
+- Arm Clamp: V1
+- ESC Clamp: V1(Initial Release)
+---
+
+### 🔧 Major Milestones
+- Officially entered **Fuselage V6**
+<img width="829" height="594" alt="image" src="https://github.com/user-attachments/assets/5d20b34b-8f17-4e9a-a4ec-7c1b28c99e15" />
+- Made ESC mounts
+<img width="625" height="559" alt="image" src="https://github.com/user-attachments/assets/b76b1933-6e1f-4b23-8a78-bbbd732ae5d0" />
+- Completed **full sectioning of the fuselage**, establishing clear boundaries for:
+  - Front module
+  - Mid‑section core  
+  - Rear module  
+- Added new **carbon‑rod reinforcements** to the BOM to increase torsional rigidity and reduce printed‑part load.
+  - Includes additional 10x8(OD, ID)mm rods for Internal Ribs  
+  - Updated BOM with parts mentioned above, and new filament
+
+---
+
+### 📐 Structural Improvements
+- Sectioning the fuselage allowed proper isolation of:
+  - Battery bay  
+  - ESC cooling corridor  
+  - Sensor nose compartment  
+  - Rear avionics shelf  
+- This segmentation ensures cleaner assembly, easier maintenance, and more predictable load paths.
+- Carbon‑rod additions significantly improve stiffness across the fuselage spine and arm sockets.
+
+---
+
+### 🔩 New Component: ESC Clamp (V1)
+- Designed and finalized a **new ESC clamp** specifically for the rear module.
+- Purpose:
+  - Secure ESCs against vibration
+  - Mount ESCs Securely
+
+---
+
+### 📦 BOM Updates
+- Added:
+  - Additional carbon rods (structural + internal bracing)  
+  - ESC clamp (printed)  
+  - Updated fastener counts for rear module  
+- Revised:
+  - Fuselage V6 part grouping  
+  - Printed plate folder structure  
+  - Locking plate documentation
+
+---
+
+### 🧩 Next Steps
+  - Wind Tunnel Testing
+  - Model Dummy Electronics
+  - Model Camera Mounting Holes
+
+  
+---
+
 ## 🛠️ Engineering Update — Front Fuselage Split (Work in Progress)
 **📅 2026‑08‑04 • 22:31 EDT**
 
@@ -52,9 +115,6 @@
 - Begin **internal hollowing** of the fuselage V5 shell to prepare for 30% gyroid infill slicing with 4 walls and 4 floors/roofs.
 - Recalculate mass properties after infill reduction to establish accurate flight‑ready weight estimates.
 - Integrate **ESC mounting geometry**, wiring channels, and power‑distribution pathways into the fuselage interior.
-- Add the **Cube Orange+ isolation bay** and finalize avionics mounting rails.
-- Prepare **V5 static assembly documentation** for GitHub, including exploded views and part‑level callouts.
-- Start early **thermal and vibration modeling** for the clamp‑to‑arm interface under full thrust load.
 
 ---
 
@@ -88,12 +148,8 @@
 ---
 
 ### 🧩 **Next Steps**
-- Finalize **coaxial spacing** and thrust‑interaction modeling for the 27.2×8.9″ rotor pair.  
-- Begin **thermal simulations** for the upgraded ESCs under continuous high‑load operation.  
 - Design the **new ESC mounting plate** with improved airflow and vibration isolation.  
 - Update the **motor‑clamp reinforcement** to match the increased torque output of the M7C15 motors.  
-- Integrate **power‑distribution routing** for the higher‑current system, including cable strain‑relief geometry.  
-- Prepare the **vibration‑isolated Cube Orange+ bay** for final assembly and wiring layout.  
 
 ---
 

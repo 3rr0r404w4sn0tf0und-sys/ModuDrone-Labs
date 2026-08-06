@@ -35,10 +35,12 @@ This is a long-term **4-year project** focused on absolute engineering transpare
 * **Phase 2: R&D Prototyping & Design** 🟢 *[CURRENT PHASE]*
   * Tooling and printing frame prototypes utilizing PA612-CF (Carbon Fiber Reinforced Nylon) filaments.
   * Wind Tunnel Testing
-* **Phase 3: Funding** 🟡
+* **Phase 3: Funding, Manual Writing** 🟡
   * Indiegogo launch and fund period.
+  * Write the Manual.
 * **Phase 4: Flight Integration & Testing** 🔴
   * Core autopilot parameter tuning and testing sensory loop feedback (LiDAR / Gimbal).
+  * RTL testing, Failsafe Testing, and FAA registrations.
 * **Phase 5: Open Commercialization** 🔴
   * Launching open-source kit architectures for independent distribution.
 

@@ -15,7 +15,7 @@ An open-source, heavy-lift agricultural octocopter designed to challenge closed,
 * **Primary Flight Controller**: Orange Cube+ With manned aircraft radar
 * **Companion Intelligence**: Jetson Orin Nano Developer Kit for localized AI perception and processing
 * **Sensor Payload**: YDLIDAR G4, TFmini-Plus altimeter, and SIYI ZR30 Gimbal Camera
-* **Power Plant**: Heavy-lift Foxtech 12S 36000mAh Battery running through a SmartAP PDB
+* **Power Plant**: Heavy-lift Foxtech 12S 36000mAh Battery running through a MAUCH PDB
 
 
 ---
@@ -25,7 +25,7 @@ An open-source, heavy-lift agricultural octocopter designed to challenge closed,
 
 This is a long-term **4-year project** focused on absolute engineering transparency. 
 
-* **Phase 1: Conceptual Architecture & CAD Modeling** 🟢 *[CURRENT PHASE]*
+* **Phase 1: Conceptual Architecture & CAD Modeling** 🟢 
   * Finalizing the aerodynamic central fuselage hull shell within Onshape.
   * Structural layout optimization for the 8-arm carbon fiber chassis leverage points.
 
@@ -34,10 +34,10 @@ This is a long-term **4-year project** focused on absolute engineering transpare
 
 
 
-* **Phase 2: R&D Prototyping & Design** 🟡
+* **Phase 2: R&D Prototyping & Design** 🟢 *[CURRENT PHASE]*
   * Tooling and printing frame prototypes utilizing PA612-CF (Carbon Fiber Reinforced Nylon) filaments.
-  * Designing and validating electronic wiring.
-* **Phase 3: Funding** 🔴
+  * Wind Tunnel Testing
+* **Phase 3: Funding** 🟡
   * Indiegogo launch and fund period.
 * **Phase 4: Flight Integration & Testing** 🔴
   * Core autopilot parameter tuning and testing sensory loop feedback (LiDAR / Gimbal).

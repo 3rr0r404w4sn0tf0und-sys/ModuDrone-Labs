@@ -25,13 +25,11 @@ An open-source, heavy-lift agricultural octocopter designed to challenge closed,
 
 This is a long-term **4-year project** focused on absolute engineering transparency. 
 
-* **Phase 1: Conceptual Architecture & CAD Modeling** 🟢 
+* **Phase 1: Conceptual Architecture & CAD Modeling** 🔵 *[COMPLETED]*
   * Finalizing the aerodynamic central fuselage hull shell within Onshape.
   * Structural layout optimization for the 8-arm carbon fiber chassis leverage points.
 
 <img width="966" height="695" alt="image" src="https://github.com/user-attachments/assets/c41743ca-0879-442a-8783-0e3f118afcc6" />
-
-
 
 
 * **Phase 2: R&D Prototyping & Design** 🟢 *[CURRENT PHASE]*

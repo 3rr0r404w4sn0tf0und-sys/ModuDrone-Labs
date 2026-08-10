@@ -1,3 +1,62 @@
+## 🛠️ Engineering Update — Fuselage V6 → **V6 Rev6** Transition & Capacity Expansion  
+**📅 2026‑08‑10 • 00:40 EDT**
+
+### Summary of Major Revisions
+- **Fuselage:** V6 → **V6 Rev6**  
+- **Motor Clamp:** V4 (unchanged)  
+- **Arm Clamp:** V1 (unchanged)  
+- **ESC Clamp:** V1 (unchanged)  
+- **New Additions:**
+    - Landing Gear System V1(Initial Launch)
+    - Expanded Dual‑Battery Bay (72 Ah 12S)
+
+---
+
+### 🔧 Major Milestones
+- Entered **Fuselage V6 Rev6**, marking the shift toward flight‑ready geometry and subsystem integration.  
+- Added a full **landing gear assembly** designed for agricultural UAV operations:  
+  - Wide‑stance geometry for stable ground handling  
+  - Reinforced mounting plates tied directly into fuselage ribs  
+  - Carbon‑rod cross‑members to prevent flex during touchdown  
+- Completed expansion of the **battery bay** to support **dual 36 Ah 12S packs in parallel**, enabling:  
+  - **Total capacity:** 72 Ah  
+  - **Effective discharge:** 20C (2× 10C packs)  
+  - Substantially increased endurance for heavy‑lift and long‑route spraying missions  
+- Updated internal rib spacing and carbon‑rod bracing to maintain torsional rigidity despite the larger battery footprint.
+
+---
+
+### 📐 Structural Improvements
+- Battery bay enlargement required adjustments to:  
+  - Lower fuselage curvature  
+  - Rib cutouts and reinforcement patterns  
+  - High‑current cable routing channels for parallel pack leads  
+- Landing gear integration introduced:  
+  - New load‑bearing sockets bonded to the fuselage spine  
+  - Shock‑resistant geometry to reduce vibration transfer into avionics  
+- Overall benefits:  
+  - Improved CG alignment with dual‑pack configuration  
+  - More predictable load paths during landing/takeoff  
+  - Cleaner separation between battery bay, ESC corridor, and avionics shelf
+
+---
+
+### 📦 BOM Updates
+- Added:  
+  - Second Battery  
+  - Second AS150u to QS8-S adapter
+  - More QS8-S Ports 
+- Revised:  
+  - PC1500 to PC2500
+
+---
+
+### 🧩 Next Steps
+- Validate landing gear under simulated touchdown loads  
+- Begin endurance‑focused airflow and cooling analysis for dual‑pack configuration
+- Simulate in Gazebo
+- Simulate in UE5
+
 ## 🛠️ Engineering Update — Fuselage V6 Progress & Structural Additions
 **📅 2026‑08‑05 • 23:05 EDT**
 ### Summary of Major Revisions

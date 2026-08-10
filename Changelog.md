@@ -1,4 +1,4 @@
-## 🛠️ Engineering Update — Fuselage V6 → **V6 Rev6** Transition & Capacity Expansion  
+## 🛠️ Engineering Update — Landing Gear & Capacity Expansion  
 **📅 2026‑08‑10 • 00:40 EDT**
 
 ### Summary of Major Revisions

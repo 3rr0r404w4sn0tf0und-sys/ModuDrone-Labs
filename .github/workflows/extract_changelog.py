@@ -22,12 +22,12 @@ def sync_to_discord():
     # "### Summary of Major Revisions", so heading_positions[1] pointed at
     # that sub-header instead of the *next entry*, truncating the body
     # right after the date line.
+    #
+    # NOTE: "---" horizontal rules are NOT used as entry boundaries here —
+    # they're used repeatedly *within* a single entry to separate sections
+    # (Summary / Milestones / Structural Improvements / BOM / Next Steps).
+    # Only the next "## " heading marks the start of a new entry.
     heading_positions = [m.start() for m in re.finditer(r'^##\s', content, re.MULTILINE)]
-
-    # Also treat a horizontal rule ("---" on its own line) as an entry
-    # boundary, since older entries sit below one of these dividers.
-    hr_match = re.search(r'^\s*-{3,}\s*$', content, re.MULTILINE)
-    hr_pos = hr_match.start() if hr_match else len(content)
 
     if not heading_positions:
         print("No headings found, sending full content.")
@@ -35,9 +35,7 @@ def sync_to_discord():
         body_text = content
     else:
         start_pos = heading_positions[0]
-        next_heading_pos = heading_positions[1] if len(heading_positions) > 1 else len(content)
-        # End at whichever comes first: the next ## heading, or the HR divider
-        end_pos = min(next_heading_pos, hr_pos)
+        end_pos = heading_positions[1] if len(heading_positions) > 1 else len(content)
         latest_block = content[start_pos:end_pos].strip()
 
         # Separate the title (the very first line) from the rest of the text

@@ -1,8 +1,11 @@
 name: Sync Changelog to Discord
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'
+  push:
+    branches:
+      - main  # <-- Triggers instantly the exact second you push code to main!
+    paths:
+      - 'Changelog.md'  # <-- ONLY triggers if Changelog.md itself was modified!
   workflow_dispatch: 
 
 jobs:
@@ -21,26 +24,12 @@ jobs:
         id: parse_changelog
         run: python .github/workflows/extract_changelog.py
 
-      # Cache continues tracking fingerprint to prevent duplicate spam loops
-      - name: Check Cache History
-        id: cache-changelog
-        uses: actions/cache@v4
-        with:
-          path: .github/workflows/last_changelog.txt
-          key: changelog-${{ hashFiles('Changelog.md') }}
-          restore-keys: |
-            changelog-
-
       - name: Send Rich Embed to Discord
-        if: steps.cache-changelog.outputs.cache-hit != 'true' && steps.parse_changelog.outputs.payload != ''
+        if: steps.parse_changelog.outputs.payload != ''
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
           FINAL_PAYLOAD: ${{ steps.parse_changelog.outputs.payload }}
         run: |
-          # 1. Update state footprint cache validation
-          echo "$FINAL_PAYLOAD" > .github/workflows/last_changelog.txt
-
-          # 2. Pass the clean payload object string straight to curl
           curl -H "Content-Type: application/json" \
                -X POST \
                -d "$FINAL_PAYLOAD" \

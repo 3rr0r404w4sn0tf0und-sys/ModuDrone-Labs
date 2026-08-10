@@ -1,0 +1,65 @@
+name: Sync Changelog to Discord
+
+on:
+  schedule:
+    # Executes precisely every 30 minutes
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # Adds the manual 'Run workflow' button in your UI!
+
+jobs:
+  check-and-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Extract Latest Changelog Entry
+        id: parse_changelog
+        run: python .github/workflows/extract_changelog.py
+
+      # Using this step ensures it doesn't spam Discord if there are no updates
+      - name: Check Cache History
+        id: cache-changelog
+        uses: actions/cache@v4
+        with:
+          path: .github/workflows/last_changelog.txt
+          key: changelog-${{ hashFiles('Changelog.md') }}
+          restore-keys: |
+            changelog-
+
+      - name: Send Rich Embed to Discord
+        # Only execute if the file changed (cache miss) AND the description is not empty
+        if: steps.cache-changelog.outputs.cache-hit != 'true' && steps.parse_changelog.outputs.description != ''
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          EMBED_TITLE: ${{ fromJSON(steps.parse_changelog.outputs.title) }}
+          EMBED_DESC: ${{ fromJSON(steps.parse_changelog.outputs.description) }}
+        run: |
+          # 1. Update our state tracking file to lock the cache for future loops
+          echo "$EMBED_DESC" > .github/workflows/last_changelog.txt
+
+          # 2. Package text safely into a proper JSON string layout format
+          PAYLOAD=$(jq -n \
+            --arg title "$EMBED_TITLE" \
+            --arg desc "$EMBED_DESC" \
+            '{
+              embeds: [{
+                title: $title,
+                description: $desc,
+                color: 3447003, # Sleek blue accent color
+                footer: {
+                  text: "Automated CAD Sync"
+                }
+              }]
+            }')
+
+          # 3. Post payload string execution out to Discord
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "$PAYLOAD" \
+               $DISCORD_WEBHOOK

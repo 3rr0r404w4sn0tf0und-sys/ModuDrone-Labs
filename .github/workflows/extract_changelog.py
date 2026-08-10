@@ -14,6 +14,11 @@ def sync_to_discord():
         print("Changelog.md not found.")
         return
 
+    # Links appended to the bottom of every Discord message, and used
+    # inside the image/grid placeholders below.
+    GITHUB_CHANGELOG_URL = "https://github.com/3rr0r404w4sn0tf0und-sys/ModuDrone-Labs/blob/main/Changelog.md"
+    ONSHAPE_URL = "https://cad.onshape.com/documents/e87d46874a385fbec040f01c/w/3f5500552e76a844099c1e4a/e/fdc0c3d3f0b3d21b94bce90c"
+
     with open(changelog_path, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -45,32 +50,49 @@ def sync_to_discord():
 
     # Grid:{} blocks become <table>...</table> after format_changelog.py runs.
     # Discord embed descriptions can't render tables, so swap each one for a
-    # short placeholder instead of dumping raw HTML into the message.
+    # markdown link straight to the Changelog on GitHub instead of dumping
+    # raw HTML into the message.
+    grid_placeholder = f'🖼️ [Image grid — view on GitHub]({GITHUB_CHANGELOG_URL})'
     body_text = re.sub(
         r'<table>.*?</table>',
-        '🖼️ *[Image grid — view on GitHub]*',
+        grid_placeholder,
         body_text,
         flags=re.DOTALL,
     )
 
-    # Size:{} blocks become <details><summary>...</summary><img .../></details>.
-    # Collapse each to a single placeholder line too.
+    # Legacy Size:{} output (older entries may still have <details> wrappers
+    # from before Size switched to plain resized <img> tags) gets the same
+    # treatment for backward compatibility.
+    img_placeholder = f'🖼️ [Image — view on GitHub]({GITHUB_CHANGELOG_URL})'
     body_text = re.sub(
         r'<details>.*?</details>',
-        '🖼️ *[Image — view on GitHub]*',
+        img_placeholder,
         body_text,
         flags=re.DOTALL,
     )
 
-    # Clean out any remaining raw HTML image tags so they don't break the text block
-    body_text = re.sub(r'<img[^>]*>', '', body_text)
+    # Clean out any remaining raw <img> tags — this now includes the plain
+    # resized images Size:{} produces directly (no more <details> wrapper) —
+    # and replace each with a linked placeholder instead of deleting silently.
+    body_text = re.sub(r'<img[^>]*>', img_placeholder, body_text)
 
     # Collapse any resulting blank-line runs left behind by stripped images
     body_text = re.sub(r'\n{3,}', '\n\n', body_text).strip()
 
-    # Cap size limit safely within Discord's embed description boundary
-    if len(body_text) > 4000:
-        body_text = body_text[:3997] + "..."
+    # Links footer appended to the bottom of every message.
+    links_footer = (
+        f"\n\n---\n"
+        f"📄 [Full Changelog on GitHub]({GITHUB_CHANGELOG_URL})\n"
+        f"🛠️ [Open in Onshape]({ONSHAPE_URL})"
+    )
+
+    # Cap size limit safely within Discord's embed description boundary,
+    # reserving room for the links footer so it never gets truncated off.
+    max_body_len = 4000 - len(links_footer)
+    if len(body_text) > max_body_len:
+        body_text = body_text[:max_body_len - 3] + "..."
+
+    body_text += links_footer
 
     # Construct the complete JSON payload object structure
     payload = {

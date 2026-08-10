@@ -5,45 +5,48 @@ import json
 def get_latest_changelog():
     changelog_path = "Changelog.md"
     if not os.path.exists(changelog_path):
-        return None
+        return {"title": "No Changelog Found", "description": "Changelog.md file is missing from repository root."}
 
     with open(changelog_path, "r", encoding="utf-8") as f:
-        content = f.read()
+        content = f.read().strip()
 
-    # Split the document precisely when the Engineering update header format is encountered
-    sections = re.split(r'^(?=##\s+🛠️\s+Engineering Update)', content, flags=re.MULTILINE)
+    if not content:
+        return {"title": "Empty Changelog", "description": "Changelog.md file has no content."}
+
+    # Find where markdown headings start
+    heading_positions = [m.start() for m in re.finditer(r'^(#{1,6})\s', content, re.MULTILINE)]
     
-    if len(sections) < 2:
-        if not sections:
-            return None
-        latest_block = sections
-    else:
-        # If text exists before the first header, skip it and pick the first true update section
-        latest_block = sections if sections.strip() == "" else sections
+    if not heading_positions:
+        # If there are no markdown headers, treat the entire file as the message body
+        return {"title": "Changelog Update", "description": content}
 
-    latest_block = latest_block.strip()
+    # Isolate from the absolute first heading to the second heading (if it exists)
+    start_pos = heading_positions[0]
+    end_pos = heading_positions[1] if len(heading_positions) > 1 else len(content)
+    latest_block = content[start_pos:end_pos].strip()
 
-    # Isolate lines to separate the heading title from the technical logs
     lines = latest_block.split('\n')
-    title = lines.replace('##', '').strip()
+    # Clean the first line to make it a clean title
+    title = lines[0].replace('#', '').strip()
     
+    # Reassemble everything else as the description body
     body_text = '\n'.join(lines[1:]).strip()
 
-    # Strip out the raw HTML img tags that clutter and break text formatting arrays
-    body_text = re.sub(r'<img\s+[^>]*\/>', '', body_text)
+    # Scrub out all raw HTML image tags completely
+    body_text = re.sub(r'<img[^>]*>', '', body_text)
     
-    # Cap string outputs safe from Discord structural container failures
+    # Cap size limit for safety
     if len(body_text) > 4000:
         body_text = body_text[:3997] + "..."
 
     return {
-        "title": title,
-        "description": body_text
+        "title": title if title else "Changelog Update",
+        "description": body_text if body_text else "New update committed."
     }
 
 if __name__ == "__main__":
     data = get_latest_changelog()
-    if data:
-        with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as fh:
-            fh.write(f"title={json.dumps(data['title'])}\n")
-            fh.write(f"description={json.dumps(data['description'])}\n")
+    # Always guarantee clean, fallback JSON syntax outputs to environment channels
+    with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as fh:
+        fh.write(f"title={json.dumps(data['title'])}\n")
+        fh.write(f"description={json.dumps(data['description'])}\n")

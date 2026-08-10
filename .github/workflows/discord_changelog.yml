@@ -3,9 +3,9 @@ name: Sync Changelog to Discord
 on:
   push:
     branches:
-      - main  # <-- Triggers instantly the exact second you push code to main!
+      - main
     paths:
-      - 'Changelog.md'  # <-- ONLY triggers if Changelog.md itself was modified!
+      - 'Changelog.md'
   workflow_dispatch: 
 
 jobs:
@@ -20,17 +20,8 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Extract Latest Changelog Entry
-        id: parse_changelog
-        run: python .github/workflows/extract_changelog.py
-
-      - name: Send Rich Embed to Discord
-        if: steps.parse_changelog.outputs.payload != ''
+      - name: Extract and Post Changelog to Discord
         env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          FINAL_PAYLOAD: ${{ steps.parse_changelog.outputs.payload }}
-        run: |
-          curl -H "Content-Type: application/json" \
-               -X POST \
-               -d "$FINAL_PAYLOAD" \
-               $DISCORD_WEBHOOK
+          # Securely passes your repository secret down to the Python script execution layer
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python .github/workflows/extract_changelog.py

@@ -43,7 +43,26 @@ def sync_to_discord():
         title = lines[0].replace('#', '').strip()
         body_text = '\n'.join(lines[1:]).strip()
 
-    # Clean out all raw HTML image tags completely so they don't break the text block
+    # Grid:{} blocks become <table>...</table> after format_changelog.py runs.
+    # Discord embed descriptions can't render tables, so swap each one for a
+    # short placeholder instead of dumping raw HTML into the message.
+    body_text = re.sub(
+        r'<table>.*?</table>',
+        '🖼️ *[Image grid — view on GitHub]*',
+        body_text,
+        flags=re.DOTALL,
+    )
+
+    # Size:{} blocks become <details><summary>...</summary><img .../></details>.
+    # Collapse each to a single placeholder line too.
+    body_text = re.sub(
+        r'<details>.*?</details>',
+        '🖼️ *[Image — view on GitHub]*',
+        body_text,
+        flags=re.DOTALL,
+    )
+
+    # Clean out any remaining raw HTML image tags so they don't break the text block
     body_text = re.sub(r'<img[^>]*>', '', body_text)
 
     # Collapse any resulting blank-line runs left behind by stripped images

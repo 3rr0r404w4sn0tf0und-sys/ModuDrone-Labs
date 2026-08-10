@@ -4,7 +4,6 @@ import json
 import urllib.request
 
 def sync_to_discord():
-    # 1. Fetch the secure webhook URL from the repository settings environment
     webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
     if not webhook_url:
         print("Error: DISCORD_WEBHOOK_URL environment variable is missing.")
@@ -16,35 +15,35 @@ def sync_to_discord():
         return
 
     with open(changelog_path, "r", encoding="utf-8") as f:
-        content = f.read().strip()
+        content = f.read()
 
-    if not content:
-        print("Changelog.md is empty.")
-        return
-
-    # 2. Extract from the absolute first heading to the second heading
-    heading_positions = [m.start() for m in re.finditer(r'^(#{1,6})\s', content, re.MULTILINE)]
+    # Find the positions of all Markdown headings (e.g., ## 🛠️ Engineering Update)
+    # This regex looks for lines starting with 1 to 3 hashtags followed by text
+    heading_positions = [m.start() for m in re.finditer(r'^#{1,3}\s', content, re.MULTILINE)]
     
     if not heading_positions:
+        print("No headings found, sending full content.")
         title = "Changelog Update"
         body_text = content
     else:
+        # Isolate the newest entry block (from the 1st heading up until the 2nd heading)
         start_pos = heading_positions[0]
         end_pos = heading_positions[1] if len(heading_positions) > 1 else len(content)
         latest_block = content[start_pos:end_pos].strip()
 
+        # Separate the title (the very first line) from the rest of the text
         lines = latest_block.split('\n')
         title = lines[0].replace('#', '').strip()
         body_text = '\n'.join(lines[1:]).strip()
 
-    # 3. Clean out all HTML image tags cleanly
+    # Clean out all raw HTML image tags completely so they don't break the text block
     body_text = re.sub(r'<img[^>]*>', '', body_text)
     
-    # Cap size limit safely within Discord's 4096 embed description boundary
+    # Cap size limit safely within Discord's embed description boundary
     if len(body_text) > 4000:
         body_text = body_text[:3997] + "..."
 
-    # 4. Construct the complete final JSON object payload structure
+    # Construct the complete JSON payload object structure
     payload = {
         "embeds": [{
             "title": title if title else "Changelog Update",
@@ -56,7 +55,7 @@ def sync_to_discord():
         }]
     }
 
-    # 5. Safely POST the payload out to Discord over a native network stream
+    # Post the data to Discord over a native network stream
     req = urllib.request.Request(
         webhook_url,
         data=json.dumps(payload, ensure_ascii=False).encode('utf-8'),

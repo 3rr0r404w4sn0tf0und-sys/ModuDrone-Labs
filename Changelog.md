@@ -9,6 +9,7 @@
 - **New Additions:**
     - Landing Gear System V1(Initial Launch)
     - Expanded Dual‑Battery Bay (72 Ah 12S)
+<img width="751" height="775" alt="image" src="https://github.com/user-attachments/assets/cecd8f69-2695-4225-911d-bc4f43c35e75" />
 
 ---
 
@@ -23,6 +24,9 @@
   - **Effective discharge:** 20C (2× 10C packs)  
   - Substantially increased endurance for heavy‑lift and long‑route spraying missions  
 - Updated internal rib spacing and carbon‑rod bracing to maintain torsional rigidity despite the larger battery footprint.
+<img width="1191" height="806" alt="image" src="https://github.com/user-attachments/assets/ee85735d-1556-4028-a0c5-73beaaa3d63c" />
+<img width="921" height="706" alt="image" src="https://github.com/user-attachments/assets/e085f4f1-2857-41b4-b528-efa16fbb68b8" />
+<img width="1228" height="640" alt="image" src="https://github.com/user-attachments/assets/6c9f4e64-4df9-45bf-8843-4e8c971b22f9" />
 
 ---
 

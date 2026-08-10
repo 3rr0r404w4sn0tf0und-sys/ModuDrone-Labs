@@ -21,6 +21,7 @@ jobs:
         id: parse_changelog
         run: python .github/workflows/extract_changelog.py
 
+      # Cache continues tracking fingerprint to prevent duplicate spam loops
       - name: Check Cache History
         id: cache-changelog
         uses: actions/cache@v4
@@ -31,32 +32,16 @@ jobs:
             changelog-
 
       - name: Send Rich Embed to Discord
-        if: steps.cache-changelog.outputs.cache-hit != 'true'
+        if: steps.cache-changelog.outputs.cache-hit != 'true' && steps.parse_changelog.outputs.payload != ''
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          EMBED_TITLE: ${{ steps.parse_changelog.outputs.title }}
-          EMBED_DESC: ${{ steps.parse_changelog.outputs.description }}
+          FINAL_PAYLOAD: ${{ steps.parse_changelog.outputs.payload }}
         run: |
-          # 1. Update state footprint cache verification tracking
-          echo "$EMBED_DESC" > .github/workflows/last_changelog.txt
+          # 1. Update state footprint cache validation
+          echo "$FINAL_PAYLOAD" > .github/workflows/last_changelog.txt
 
-          # 2. Package text payloads securely using robust native json serialization flags
-          PAYLOAD=$(jq -n \
-            --arg title "$EMBED_TITLE" \
-            --arg desc "$EMBED_DESC" \
-            '{
-              embeds: [{
-                title: $title,
-                description: $desc,
-                color: 3447003,
-                footer: {
-                  text: "Automated CAD Sync"
-                }
-              }]
-            }')
-
-          # 3. Deliver package payload over curl execution straight to Discord server
+          # 2. Pass the clean payload object string straight to curl
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d "$PAYLOAD" \
+               -d "$FINAL_PAYLOAD" \
                $DISCORD_WEBHOOK

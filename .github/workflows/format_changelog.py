@@ -28,21 +28,14 @@ def _replace_size_block(match: re.Match) -> str:
     if not img_tags:
         return match.group(0)  # leave untouched if nothing found
 
-    # Size:{} supports multiple images too, but stacks them individually
-    # (each gets its own bordered/expandable box) rather than gridding
-    # them side by side — that's what Grid:{} is for.
-    blocks = []
+    # Size:{} supports multiple images, each just resized to the standard
+    # width and placed on its own line — no dropdown/expandable wrapper.
+    resized = []
     for tag in img_tags:
         src, alt = _extract_src_alt(tag)
-        img_html = _build_img(src, alt, STANDARD_WIDTH)
-        blocks.append(
-            "<details>\n"
-            f"<summary>📷 {alt}</summary>\n\n"
-            f"{img_html}\n"
-            "</details>"
-        )
+        resized.append(_build_img(src, alt, STANDARD_WIDTH))
 
-    return "\n\n".join(blocks)
+    return "\n\n".join(resized)
 
 
 def _replace_grid_block(match: re.Match) -> str:

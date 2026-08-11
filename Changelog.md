@@ -1,6 +1,5 @@
 ## 🛠️ Engineering Update — Landing Gear & Capacity Expansion  
 **📅 2026‑08‑10 • 00:55 EDT**
----
 ### Summary of Major Revisions
 - **Fuselage:** V6 → **V6 Rev6**  
 - **Motor Clamp:** V4 (unchanged)  
@@ -9,6 +8,7 @@
 - **New Additions:**
     - Landing Gear System V1(Initial Launch)
     - Expanded Dual‑Battery Bay (72 Ah 12S)
+---
 <details>
 <summary>📷 image</summary>
 

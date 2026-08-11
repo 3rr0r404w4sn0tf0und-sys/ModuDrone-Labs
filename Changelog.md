@@ -65,6 +65,7 @@
 - Simulate in Gazebo
 - Simulate in UE5
 
+---
 ## 🛠️ Engineering Update — Fuselage V6 Progress & Structural Additions
 **📅 2026‑08‑05 • 23:05 EDT**
 ### Summary of Major Revisions

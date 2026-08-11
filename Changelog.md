@@ -14,7 +14,6 @@
 
 <img src="https://github.com/user-attachments/assets/cecd8f69-2695-4225-911d-bc4f43c35e75" alt="image" width="600" />
 </details>
----
 
 ### 🔧 Major Milestones
 - Entered **Fuselage V6 Rev6**, marking the shift toward flight‑ready geometry and subsystem integration.  
@@ -48,7 +47,6 @@
   - Improved CG alignment with dual‑pack configuration  
   - More predictable load paths during landing/takeoff  
   - Cleaner separation between battery bay, ESC corridor, and avionics shelf
-
 ---
 
 ### 📦 BOM Updates

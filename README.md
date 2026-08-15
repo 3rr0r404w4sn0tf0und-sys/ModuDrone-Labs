@@ -29,7 +29,7 @@ This is a long-term **4-year project** focused on absolute engineering transpare
   * Finalizing the aerodynamic central fuselage hull shell within Onshape.
   * Structural layout optimization for the 8-arm carbon fiber chassis leverage points.
 
-<img width="966" height="695" alt="image" src="https://github.com/user-attachments/assets/c41743ca-0879-442a-8783-0e3f118afcc6" />
+<img width="1023" height="649" alt="image" src="https://github.com/user-attachments/assets/f930da01-52f9-459f-a9b5-0d75e57b9d4b" />
 
 
 * **Phase 2: R&D Prototyping & Design** 🟢 *[CURRENT PHASE]*
@@ -40,7 +40,7 @@ This is a long-term **4-year project** focused on absolute engineering transpare
   * Write the Manual.
 * **Phase 4: Flight Integration & Testing** 🔴
   * Core autopilot parameter tuning and testing sensory loop feedback (LiDAR / Gimbal).
-  * RTL testing, Failsafe Testing, and FAA registrations.
+  * RTL testing, and Failsafe Testing.
 * **Phase 5: Open Commercialization** 🔴
   * Launching open-source kit architectures for independent distribution.
 

@@ -1,3 +1,51 @@
+## 🛠️ Engineering Update — Fuselage **V7 Release**
+**📅 2026‑08‑18 • 10:52 EDT**
+
+### Summary of Major Revisions
+- **Fuselage:** V6 Rev6 → **V7**
+- **Motor Clamp:** V4 (unchanged)  
+- **Arm Clamp:** V1 (unchanged)  
+- **ESC Clamp:** V1 (unchanged)  
+---
+
+### 🔧 Major Milestones
+- Entered **Fuselage V7**, a refinement‑focused update aimed at precision, CG stability, and control‑system responsiveness.  
+- Completed a **full battery bay redesign** to achieve perfectly centered mass alignment:  
+  - CG offset now **<5 mm** on all lateral axes(Y axis should balance out once wiring is added)  
+  - Balanced cable routing to maintain equal electrical path lengths  
+- Began **experimental low‑latency control system Researching** using:  
+  - **Gladiator NXT EVO sticks**  
+  - **Direct UART injection** into the flight controller  
+
+---
+<table>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/e5f2dd8a-ecbf-471c-9107-a7763324f598" alt="image" width="600" /></td>
+<td><img src="https://github.com/user-attachments/assets/af328924-3065-4d99-bea0-99f8d64362ca" alt="image" width="600" /></td>
+<td><img src="https://github.com/user-attachments/assets/4ab7c32f-1ea3-4595-acd0-4347f1b43265" alt="image" width="600" /></td>
+</tr>
+</table>
+
+### 📐 Structural Improvements
+- Battery bay geometry updated for centered dual‑pack seating:  
+  - Re‑profiled lower fuselage curvature  
+  - Adjusted rib cutouts for symmetric load distribution  
+  - Cleaned internal routing channels for parallel 12S pack leads  
+- No major changes to landing gear, fuselage ribs, or carbon‑rod bracing beyond minor alignment tweaks required by the new battery bay.
+
+---
+
+### 📦 BOM Updates
+- No major BOM changes for V7.  
+- Battery‑related connectors and cable lengths remain identical to V6 Rev6.
+
+---
+
+### 🧩 Next Steps
+- Gazebo Testing.  
+- Continue latency‑reduction researching.   
+
+---
 ## 🛠️ Engineering Update — Landing Gear & Capacity Expansion  
 **📅 2026‑08‑10 • 00:55 EDT**
 ### Summary of Major Revisions

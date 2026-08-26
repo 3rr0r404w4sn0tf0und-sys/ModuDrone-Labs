@@ -32,19 +32,19 @@ This is a long-term **4-year project** focused on absolute engineering transpare
 <img width="1023" height="649" alt="image" src="https://github.com/user-attachments/assets/f930da01-52f9-459f-a9b5-0d75e57b9d4b" />
 
 
-* **Phase 2: R&D Prototyping & Design** 🟢 *[CURRENT PHASE]*
+* **Phase 2: R&D Prototyping & Design** -------------------------------------------------------- 🟢 *[CURRENT PHASE]*
   * Tooling and printing frame prototypes utilizing PA612-CF (Carbon Fiber Reinforced Nylon) filaments.
   * Wind Tunnel Testing
-* **Phase 3: Funding** 🟡
+* **Phase 3: Funding** ------------------------------------------------------------------------- 🟡
   * Indiegogo launch and fund period.
-* **Phase 4: Flight Integration & Testing** 🔴
+* **Phase 4: Flight Integration & Testing** ---------------------------------------------------- 🔴
   * Core autopilot parameter tuning and testing sensory loop feedback (LiDAR / Gimbal).
   * RTL testing, and Failsafe Testing.
-* **Phase 5: Part 47, 44807, manual, and legal draft - Funding Period 2** 
+* **Phase 5: Part 47, 44807, manual, and legal draft - Funding Period 2** ---------------------- 🔴
   * Hire Lawyer to write legal stuff to acquire the part 47 heavy lift exemption.
   * Write the User Manual
   * Make 44807 template
-* **Phase 6: Open Commercialization** 🔴
+* **Phase 6: Open Commercialization** ---------------------------------------------------------- 🔴
   * Launching open-source kit architectures for independent distribution.
 
 ---

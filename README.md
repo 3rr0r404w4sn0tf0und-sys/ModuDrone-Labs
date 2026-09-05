@@ -33,17 +33,18 @@ This is a long-term **4-year project** focused on absolute engineering transpare
 
 
 * **Phase 2: R&D Prototyping & Design** -------------------------------------------------------- 🟢 *[CURRENT PHASE]*
-  * Tooling and printing frame prototypes utilizing PA612-CF (Carbon Fiber Reinforced Nylon) filaments.
   * Wind Tunnel Testing
+  * Extra Reinforcements and CAD check period.
 * **Phase 3: Funding** ------------------------------------------------------------------------- 🟡
   * Indiegogo launch and fund period.
 * **Phase 4: Flight Integration & Testing** ---------------------------------------------------- 🔴
+  * 3d print the frame and build it.
   * Core autopilot parameter tuning and testing sensory loop feedback (LiDAR / Gimbal).
-  * RTL testing, and Failsafe Testing.
 * **Phase 5: Part 47, 44807, manual, and legal draft - Funding Period 2** ---------------------- 🔴
   * Hire Lawyer to write legal stuff to acquire the part 47 heavy lift exemption.
   * Write the User Manual
   * Make 44807 template
+  * RTL testing, and Failsafe Testing.
 * **Phase 6: Open Commercialization** ---------------------------------------------------------- 🔴
   * Launching open-source kit architectures for independent distribution.
 

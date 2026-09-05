@@ -30,6 +30,7 @@ This is a long-term **4-year project** focused on absolute engineering transpare
   * Structural layout optimization for the 8-arm carbon fiber chassis leverage points.
 
 <img width="1023" height="649" alt="image" src="https://github.com/user-attachments/assets/f930da01-52f9-459f-a9b5-0d75e57b9d4b" />
+<img width="1023" height="649" alt="image" src="https://github.com/user-attachments/assets/a240bb68-fc44-4fde-b45c-2a9cb260d7cb" />
 
 
 * **Phase 2: R&D Prototyping & Design** -------------------------------------------------------- 🟢 *[CURRENT PHASE]*

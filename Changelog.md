@@ -1,4 +1,4 @@
-## 🛠️ Engineering Update — FC, GPS, and controlelrs change.
+## 🛠️ Engineering Update — FC, GPS, and controllers change.
 **📅 2026‑09‑28 • 06:26 EDT**
 
 ### Summary of Major Revisions

@@ -12,9 +12,10 @@ An open-source, heavy-lift agricultural octocopter designed to challenge closed,
 * **Frame Configuration**: Industrial Co-Axial Octocopter (4-Arm design with 3K Carbon Fiber tubes)
 * **Propulsion Stack**: MAD Components M7C15 IPE motors spinning 27.2*8.9" MAD Fluxer Props
 * **Communications Protocol**: Integrated DroneCAN architecture for robust electronic reliability
-* **Primary Flight Controller**: Orange Cube+ With manned aircraft radar
+* **Primary Flight Controller**: Pixhawk 6x
 * **Companion Intelligence**: Jetson Orin Nano Developer Kit for localized AI perception and processing
 * **Sensor Payload**: YDLIDAR G4, TFmini-Plus altimeter, and SIYI ZR30 Gimbal Camera
+* **RTK GPS**: H-RTK mosaic-H (Dual Antenna Heading)
 * **Power Plant**: Heavy-lift Foxtech 12S 36000mAh Battery running through a MAUCH PDB
 
 
@@ -35,14 +36,15 @@ This is a long-term **4-year project** focused on absolute engineering transpare
 
 * **Phase 2: R&D Prototyping & Design** -------------------------------------------------------- 🟢 *[CURRENT PHASE]*
   * Wind Tunnel Testing
+  * AIRsim testing
   * Extra Reinforcements and CAD check period.
 * **Phase 3: Funding** ------------------------------------------------------------------------- 🟡
-  * Indiegogo launch and fund period.
+  * Grant proposals and applications
 * **Phase 4: Flight Integration & Testing** ---------------------------------------------------- 🔴
   * 3d print the frame and build it.
   * Core autopilot parameter tuning and testing sensory loop feedback (LiDAR / Gimbal).
 * **Phase 5: Part 47, 44807, manual, and legal draft - Funding Period 2** ---------------------- 🔴
-  * Hire Lawyer to write legal stuff to acquire the part 47 heavy lift exemption.
+  * Hire Lawyer to write legal contracts, and forms to acquire the part 47 heavy lift exemption.
   * Write the User Manual
   * Make 44807 template
   * RTL testing, and Failsafe Testing.

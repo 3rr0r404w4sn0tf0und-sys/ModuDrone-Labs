@@ -1,3 +1,38 @@
+## 🛠️ Engineering Update — FC, GPS, and controlelrs change.
+**📅 2026‑09‑28 • 06:26 EDT**
+
+### Summary of Major Revisions
+- **Fuselage:** V6 Rev6 → **V7**
+- **Motor Clamp:** V4 (unchanged)  
+- **Arm Clamp:** V1 (unchanged)  
+- **ESC Clamp:** V1 (unchanged)  
+---
+
+### 🔧 Major Milestones
+- New FC change and RTK GPS change
+- Battery bay change
+- Controller change
+---
+
+### 📐 Structural Improvements
+- Battery bay changed back and moved to the center for better COG/COM
+---
+### Changes
+- Controllers changed from T16000m HOSAS to HOSAS Gladiator NXT evo controllers
+- Faster lower latency in theory controls
+- Direct from Pi 02w to HM30 Ground Unit
+---
+### 📦 BOM Updates
+- Major FC and GPS change
+- Changed FC from Cube Orange to Pixhawk 6x
+- Changed GPS from cheap m10 GPS to H-RTK Mosaic-H dual antenna GPS
+
+---
+
+### 🧩 Next Steps
+- AIR sim Testing.     
+
+---
 ## 🛠️ Engineering Update — Fuselage **V7 Release**
 **📅 2026‑08‑18 • 10:52 EDT**
 

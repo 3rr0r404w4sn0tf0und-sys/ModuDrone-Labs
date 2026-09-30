@@ -12,11 +12,11 @@ An open-source, heavy-lift agricultural octocopter designed to challenge closed,
 * **Frame Configuration**: Industrial Co-Axial Octocopter (4-Arm design with 3K Carbon Fiber tubes)
 * **Propulsion Stack**: MAD Components M7C15 IPE motors spinning 27.2*8.9" MAD Fluxer Props
 * **Communications Protocol**: Integrated DroneCAN architecture for robust electronic reliability
-* **Primary Flight Controller**: Pixhawk 6x
+* **Primary Flight Controller**: Pixhawk 6x with triple redundancy and mroe ports for expansion
 * **Companion Intelligence**: Jetson Orin Nano Developer Kit for localized AI perception and processing
 * **Sensor Payload**: YDLIDAR G4, TFmini-Plus altimeter, and SIYI ZR30 Gimbal Camera
 * **RTK GPS**: H-RTK mosaic-H (Dual Antenna Heading)
-* **Power Plant**: Heavy-lift Foxtech 12S 36000mAh Battery running through a MAUCH PDB
+* **Power Plant**: 2 Foxtech 12S 36000mAh Batterys running through a MAUCH PDB
 
 
 ---

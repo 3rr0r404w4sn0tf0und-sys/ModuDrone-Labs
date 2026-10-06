@@ -29,17 +29,16 @@ This is a long-term **4-year project** focused on absolute engineering transpare
 * **Phase 1: Conceptual Architecture & CAD Modeling** ------------------------------------------ 🔵 *[COMPLETED]*
   * Finalizing the aerodynamic central fuselage hull shell within Onshape.
   * Structural layout optimization for the 8-arm carbon fiber chassis leverage points.
+  * Extra Reinforcements and CAD check period.
 
 <img width="1023" height="649" alt="image" src="https://github.com/user-attachments/assets/f930da01-52f9-459f-a9b5-0d75e57b9d4b" />
 <img width="1023" height="649" alt="image" src="https://github.com/user-attachments/assets/a240bb68-fc44-4fde-b45c-2a9cb260d7cb" />
 
-
-* **Phase 2: R&D Prototyping & Design** -------------------------------------------------------- 🟢 *[CURRENT PHASE]*
+* **Phase 2: Funding** ------------------------------------------------------------------------- 🟢 *[CURRENT PHASE]*
+  * Grant proposals and applications
+* **Phase 3: R&D Prototyping & Design** -------------------------------------------------------- 🟡 
   * Wind Tunnel Testing
   * AIRsim testing
-  * Extra Reinforcements and CAD check period.
-* **Phase 3: Funding** ------------------------------------------------------------------------- 🟡
-  * Grant proposals and applications
 * **Phase 4: Flight Integration & Testing** ---------------------------------------------------- 🔴
   * 3d print the frame and build it.
   * Core autopilot parameter tuning and testing sensory loop feedback (LiDAR / Gimbal).

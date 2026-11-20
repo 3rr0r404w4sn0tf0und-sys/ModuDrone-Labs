@@ -3,7 +3,7 @@
 An open-source, heavy-lift agricultural octocopter designed to challenge closed, proprietary drone ecosystems. ModuDrone Labs v1 is a student-led, 4-year engineering initiative focused on building a modular, repairable, and high-performance industrial flight platform using off-the-shelf hardware and custom fabrication.
 
 ## 🚀 Quick Links
-* **CAD**  :  [Onshape CAD](https://cad.onshape.com/documents/e87d46874a385fbec040f01c/w/3f5500552e76a844099c1e4a/e/fdc0c3d3f0b3d21b94bce90c?renderMode=0&uiState=6a9a16a72fd283b8f808916b)
+* **CAD**  :  [Onshape CAD](https://cad.onshape.com/documents/e87d46874a385fbec040f01c/w/3f5500552e76a844099c1e4a/e/fdc0c3d3f0b3d21b94bce90c)
 * **ODOO** :  [https://modudrone-labs.odoo.com/](https://modudrone-labs.odoo.com/) 
 ---
 
@@ -43,10 +43,10 @@ This is a long-term **4-year project** focused on absolute engineering transpare
   * 3d print the frame and build it.
   * Core autopilot parameter tuning and testing sensory loop feedback (LiDAR / Gimbal).
 * **Phase 5: Part 47, 44807, manual, and legal draft - Funding Period 2** ---------------------- 🔴
-  * Hire Lawyer to write legal contracts, and forms to acquire the part 47 heavy lift exemption.
+  * Hire a lawyer to write legal contracts and forms to acquire the Part 47 heavy lift exemption.
   * Write the User Manual
   * Make 44807 template
-  * RTL testing, and Failsafe Testing.
+  * RTL testing and Failsafe Testing.
 * **Phase 6: Open Commercialization** ---------------------------------------------------------- 🔴
   * Launching open-source kit architectures for independent distribution.
 

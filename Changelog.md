@@ -2,6 +2,28 @@
 **📅 2026‑09‑28 • 06:26 EDT**
 
 ### Summary of Major Revisions
+- **Fuselage:** V7 → **V8**
+- **Motor Clamp:** V4 (unchanged)  
+- **Arm Clamp:** V1 (unchanged)  
+- **ESC Clamp:** V1 (unchanged)  
+---
+
+### 🔧 Major Milestones
+- Updated CAD to fit the new parts
+- Updated CAD to have Mounting point for R1M Camera
+---
+### Notes
+- From now on, Updates will be only for parts that change drastically; unchanged parts will stay.
+---
+
+### 🧩 Next Steps
+- Funding
+
+---
+## 🛠️ Engineering Update — FC, GPS, and controllers change.
+**📅 2026‑09‑28 • 06:26 EDT**
+
+### Summary of Major Revisions
 - **Fuselage:** V6 Rev6 → **V7**
 - **Motor Clamp:** V4 (unchanged)  
 - **Arm Clamp:** V1 (unchanged)  
